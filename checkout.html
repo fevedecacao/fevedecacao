@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Checkout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="goto-here">
+    <div class="py-1 bg-black">
+    	<div class="container">
+    		<div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
+	    		<div class="col-lg-12 d-block">
+		    		<div class="row d-flex">
+		    			<div class="col-md pr-4 d-flex topper align-items-center">
+					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+						    <span class="text">+27 84 4704 260</span>
+					    </div>
+					    <div class="col-md pr-4 d-flex topper align-items-center">
+					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+						    <span class="text">fevedecacao.co.za@gmail.com</span>
+					    </div>
+					    <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
+						    <span class="text">Please place your order at least 48 hours in advance.</span>
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+		  </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Fève de Cacao</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+	          <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04">
+              	<a class="dropdown-item" href="shop.html">Shop</a>
+                <a class="dropdown-item" href="product-single.html">Single Product</a>
+                <a class="dropdown-item" href="cart.html">Cart</a>
+                <a class="dropdown-item" href="checkout.html">Checkout</a>
+              </div>
+            </li>
+	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	          <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[<span class="cart-count">0</span>]</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+
+    <div class="hero-wrap hero-bread" style="background-image: url('images/social-media-cover.png');">
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Checkout</span></p>
+            <h1 class="mb-0 bread">Checkout</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ftco-section">
+      <div class="container">
+        <!-- FormSubmit sends orders to the business email -->
+        <form action="https://formsubmit.co/fevedecacao.co.za@gmail.com" method="POST" id="checkout-form" class="billing-form">
+          
+          <!-- FormSubmit Options -->
+          <input type="hidden" name="_next" value="https://fevedecacao.co.za/thank-you.html">
+          <input type="hidden" name="_subject" value="New Fève de Cacao Cake Order! 🍓">
+          <input type="hidden" name="_captcha" value="false">
+          
+          <!-- Hidden inputs packed by our JavaScript on click -->
+          <input type="hidden" name="Ordered_Items" id="hidden-order-items">
+          <input type="hidden" name="Order_Total_Due" id="hidden-order-total">
+          <input type="hidden" name="Chosen_Payment_Method" id="hidden-payment-method">
+
+          <div class="row justify-content-center">
+            
+            <!-- Left Side: Form Details -->
+            <div class="col-xl-8 ftco-animate">
+              <h3 class="mb-4 billing-heading">Billing Details</h3>
+              <div class="row align-items-end">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="First_Name" class="form-control" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="Last_Name" class="form-control" required>
+                  </div>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="country">Country</label>
+                    <div class="select-wrap">
+                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                      <select name="Country" id="country" class="form-control" readonly>
+                        <option value="ZA">South Africa</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="state">Province</label>
+                    <div class="select-wrap">
+                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                      <select name="Province" id="state" class="form-control" required>
+                        <option value="GP">Gauteng</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="streetaddress">Street Address</label>
+                    <input type="text" name="Street_Address" class="form-control" placeholder="House number and street name" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" name="Apartment_Suite_Optional" class="form-control" placeholder="Apartment, suite, unit etc. (optional)">
+                  </div>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="towncity">Town / City</label>
+                    <input type="text" name="Town_City" class="form-control" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="postcodezip">Postcode / ZIP *</label>
+                    <input type="text" name="Postal_Code" class="form-control" required>
+                  </div>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" name="Phone_Number" class="form-control" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="emailaddress">Email Address</label>
+                    <input type="email" name="Email_Address" class="form-control" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Side Column: Sticky Cart Invoicing Sidebar -->
+            <div class="col-xl-4 mt-5 mt-xl-0">
+              <div class="row">
+                <div class="col-md-12 cart-wrap ftco-animate">
+                  <div class="cart-total mb-3">
+                    <h3>Cart Total</h3>
+                  </div>
+                </div>
+                
+                <div class="col-md-12 ftco-animate">
+                  <div class="payment-method p-3 bg-white border rounded">
+                    <h3 class="billing-heading mb-4" style="font-size: 20px;">Payment Method</h3>
+                    
+                    <div class="form-group mb-3">
+                      <div class="radio">
+                        <label><input type="radio" name="optradio" value="eft" class="mr-2" checked> Bank Transfer (EFT)</label>
+                      </div>
+                      <div id="eft-details" class="payment-box p-3 bg-light border rounded mt-2" style="font-size: 13px; display: block; line-height: 1.5;">
+                        <strong>Fève de Cacao Banking Details:</strong><br>
+                        Bank: FNB<br>
+                        Account Number: 62123456789<br>
+                        Branch Code: 250655<br>
+                        <em>Please use your Name as reference.</em>
+                      </div>
+                    </div>
+                    
+                    <div class="form-group mb-3">
+                      <div class="radio">
+                        <label><input type="radio" name="optradio" value="ewallet" class="mr-2"> eWallet</label>
+                      </div>
+                      <div id="ewallet-details" class="payment-box p-3 bg-light border rounded mt-2" style="font-size: 13px; display: none; line-height: 1.5;">
+                        <strong>eWallet Instructions:</strong><br>
+                        Send total to business cell:<br><strong>+27 84 470 4260</strong>.<br>
+                        <em>Kindly email proof of payment.</em>
+                      </div>
+                    </div>
+                    
+                    <div class="form-group mb-3">
+                      <div class="radio">
+                        <label><input type="radio" name="optradio" value="payfast" class="mr-2"> PayFast (Card Payment)</label>
+                      </div>
+                      <div id="payfast-details" class="payment-box p-3 bg-light border rounded mt-2" style="font-size: 13px; display: none; line-height: 1.5;">
+                        <strong>Secure Card Payment:</strong><br>
+                        You will be securely redirected to PayFast to complete payment.
+                      </div>
+                    </div>
+
+                    <p class="text-center mt-4">
+                      <button type="submit" class="btn btn-primary py-3 px-4 w-100">Place an order</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Script Resource Configurations -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Custom Logic Code Wrapper -->
+    <script>
+      $(document).ready(function() {
+        
+        // 2. Load active storage memory array data into checkout totals card
+        var itemData = localStorage.getItem('cart_item');
+        var totalAmount = 0;
+        var itemDescription = 'No items in cart';
+
+        if (itemData) {
+          var cartItem = JSON.parse(itemData);
+          totalAmount = cartItem.price * cartItem.quantity;
+          itemDescription = cartItem.quantity + "x " + cartItem.name;
+        }
+
+        var checkoutTotalHTML = `
+          <h3 class="billing-heading mb-4">Cart Total</h3>
+          <div class="d-flex mb-3" style="font-size: 14px; font-style: italic; color: #555;">
+            <span>${itemDescription}</span>
+          </div>
+          <hr>
+          <p class="d-flex">
+            <span>Subtotal</span>
+            <span>R${totalAmount.toFixed(2)}</span>
+          </p>
+          <p class="d-flex">
+            <span>Delivery</span>
+            <span>R0.00</span>
+          </p>
+          <hr>
+          <p class="d-flex total-price">
+            <span>Total</span>
+            <span>R${totalAmount.toFixed(2)}</span>
+          </p>
+        `;
+        $('.cart-total').html(checkoutTotalHTML);
+
+        // 3. Control views visibility for local billing targets
+        $('input[name="optradio"]').on('change', function() {
+          $('#eft-details, #ewallet-details, #payfast-details').hide();
+          var selectedMethod = $(this).val();
+          $('#' + selectedMethod + '-details').fadeIn(200);
+        });
+
+        // 4. Capture submission form actions payload
+        $('#checkout-form').on('submit', function(e) {
+          var itemData = localStorage.getItem('cart_item');
+          
+          if (!itemData) {
+            alert('Your cart is empty! Please add a product before ordering.');
+            e.preventDefault();
+            return false;
+          }
+
+          var cartItem = JSON.parse(itemData);
+          var finalTotal = cartItem.price * cartItem.quantity;
+
+          $('#hidden-order-items').val(cartItem.quantity + "x " + cartItem.name);
+          $('#hidden-order-total').val("R" + finalTotal.toFixed(2));
+          
+          var paymentChecked = $('input[name="optradio"]:checked').val();
+          $('#hidden-payment-method').val(paymentChecked.toUpperCase());
+
+          localStorage.removeItem('cart_item');
+        });
+      });
+    </script>
+  </body>
+</html>
